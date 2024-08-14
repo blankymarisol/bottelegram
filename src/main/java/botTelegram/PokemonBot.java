@@ -22,7 +22,6 @@ public class PokemonBot extends TelegramLongPollingBot {
         return "7315054524:AAF5qeIjp37ECdiH0chVU_F27Ft-8NxNJGQ";
     }
 
-
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() && update.getMessage().hasText()) {

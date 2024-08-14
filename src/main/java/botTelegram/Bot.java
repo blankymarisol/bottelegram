@@ -33,11 +33,12 @@ public class Bot extends TelegramLongPollingBot
             System.out.println(" Hola "+nickname+" Tu nombre "+nombre+" y tu apellido "+apellido);
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
-            System.out.println("User id: " + chat_id + " Message: " + message_text);
 
+            if (message_text.toLowerCase().equals("hola")){
+                sendText(chat_id, "Hola amigo "+nombre);
+            }
 
-
-
+            System.out.println("User id: "+chat_id+"Message:"+message_text);
 
         }
 
