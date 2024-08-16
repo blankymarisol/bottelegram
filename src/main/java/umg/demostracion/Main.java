@@ -2,6 +2,7 @@ package umg.demostracion;
 
 import botTelegram.Bot;
 import botTelegram.PokemonBot;
+import botTelegram.BotTarea;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
@@ -12,9 +13,7 @@ public class Main {
     {
         try{
             TelegramBotsApi botApi=new TelegramBotsApi(DefaultBotSession.class);
-            Bot bot = new Bot();
-            //PokemonBot poke = new PokemonBot();
-            System.out.println("Si jala chido.........");
+            BotTarea bot = new BotTarea();
             botApi.registerBot(bot);
         }
         catch(Exception ex )
