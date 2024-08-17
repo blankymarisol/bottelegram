@@ -1,4 +1,4 @@
-package botTelegram;
+package umg.demostracion.botTelegram;
 
 import org.json.JSONObject;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;

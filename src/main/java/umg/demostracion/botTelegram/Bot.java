@@ -1,4 +1,4 @@
-package botTelegram;
+package umg.demostracion.botTelegram;
 
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;

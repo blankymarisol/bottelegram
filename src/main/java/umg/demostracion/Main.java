@@ -1,8 +1,6 @@
 package umg.demostracion;
 
-import botTelegram.Bot;
-import botTelegram.PokemonBot;
-import botTelegram.BotTarea;
+import umg.demostracion.botTelegram.BotTarea;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
