@@ -30,18 +30,18 @@ public class botCuestionario extends TelegramLongPollingBot {
         // Inicializa los cuestionarios con las preguntas.
         preguntas.put("SECTION_1", new String[]{"🤦‍♂️1.1- Estas aburrido?", "😂😂 1.2- Te bañaste hoy?", "🤡🤡 Pregunta 1.3"});
         preguntas.put("SECTION_2", new String[]{"Te gusta Taylor Swift?🤔 2.1", "Por que tu cancion favorita es All Too Well? 😪 2.2", "El karma es un gato? 😼 2.3"});
-        preguntas.put("SECTION_3", new String[]{"Te gusta Getaway Car? 🚗 3.1", "Sonara en tu boda Lover? 🩷💛 3.2", "SI QUIERES SER MI AMIGO, TE TIENE QUE GUSTAR TAYLOR SWIFT, OK?????? 💚💛💜❤️🩵🖤🩷🩶 3.3"});
-        preguntas.put("SECTION_4", new String[]{"4.1- Como estas?","4.2- Cual es tu edad?","4.3- Estas en la computadora?","4.4- Unos Valorants"});
+        preguntas.put("SECTION_3", new String[]{"Te gusta Getaway Car? 🚗 3.1"});
+        preguntas.put("SECTION_4", new String[]{"4.1- Como estas?","4.2- Cual es tu edad?","4.3- Estas en la computadora?","4.4- PERO SI TE GUSTA TAYLOR SWIFT??????????"});
     }
 
     @Override
     public String getBotUsername() {
-        return " @TinlingBot";
+        return "@blanksss_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "7148514782:AAFkEDipQnwGpIsJGzdn0EQ_1eJEGoQR5n0";
+        return "7326662711:AAFgPZsxfxP2JsZQnqMRyVQweBMZNdUs3Fc";
     }
     @Override
     public void onUpdateReceived(Update update) {
@@ -154,11 +154,11 @@ public class botCuestionario extends TelegramLongPollingBot {
             int intresponse = Integer.parseInt(response);
             if (intresponse<5){
                 sendText(chatId, "Tu respuesta fue: " + response);
-                sendText(chatId, "No eres muy joven para estar en telegram?\nPorfavor colocar otra edad");
+                sendText(chatId, "No jodas, estas muy chiquito\nPor favor tienes que ser mayor de edad!!!!!");
                 enviarPregunta(chatId);
             } else if (intresponse>95) {
                 sendText(chatId, "Tu respuesta fue: " + response);
-                sendText(chatId,"en tu tiempo el antiguo testamentp era solo el testamento\nPorfavor colocar otra edad");
+                sendText(chatId,"aqui no es Jurassic Park, baboso!🙄\nPorfavor colocar otra edad");
                 enviarPregunta(chatId);
             }else {
                 siguientepregunta(chatId,response,index);

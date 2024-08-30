@@ -1,11 +1,9 @@
 package umg.demostracion;
 
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import umg.demostracion.botTelegram.BotRegistra;
-import umg.demostracion.botTelegram.BotTarea;
+import umg.demostracion.botTelegram.*;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
-import umg.demostracion.botTelegram.botPregunton;
 import umg.demostracion.model.User;
 import umg.demostracion.service.UserService;
 import java.sql.SQLException;
@@ -120,7 +118,7 @@ public class Main {
     {
             try{
                 TelegramBotsApi botApi=new TelegramBotsApi(DefaultBotSession.class);
-                botPregunton bot = new botPregunton();
+                botCuestionario bot = new botCuestionario();
                 botApi.registerBot(bot);
             }
             catch(Exception ex )
