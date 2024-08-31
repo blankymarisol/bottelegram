@@ -6,6 +6,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import umg.demostracion.botConfig.BotConfiguracion;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,12 +21,12 @@ public class botPregunton extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return " @blanksss_bot";
+        return BotConfiguracion.getBotUsername();
     }
 
     @Override
     public String getBotToken() {
-        return "7326662711:AAFgPZsxfxP2JsZQnqMRyVQweBMZNdUs3Fc";
+        return BotConfiguracion.getBotToken();
     }
 
     public botPregunton() {
